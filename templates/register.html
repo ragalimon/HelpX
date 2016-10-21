@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>HelpX</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -19,9 +19,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/skeleton.css">
-  <link rel="stylesheet" href="../css/styles.css">
+
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
@@ -60,7 +58,7 @@
 	          <input type="text" name="user" placeholder="Password" required="required" class="input-txt" />
 	           <input type="password" name="password" placeholder="Confirm Password" required="required" class="input-txt" />
 	           <div class="container-register-butt">
-	           		<button class="register-button">Register now</button>
+	           		<button class="register-button" onclick="location.href='/ingreso'">Register now</button>
 	           	</div>
 	      </form>
 	  </div>
@@ -89,7 +87,7 @@
 	  		<h3 id="center-text-1">You have an account? Login now!</h3>
 	  	</div>
 	  	<div class="container-register-butt-1">
-	  		<button class="register-button">Login Now</button>
+	  		<button class="register-button" onclick="location.href='/ingreso'">Login Now</button>
 	  	</div>
 	  </section>
 	</div>

@@ -1,7 +1,9 @@
-
+@media only screen and (max-width: 500px) {
+    
+}
 
 .ppolice{
-	height: 1000px;
+	width: 100vw;
 	background: -webkit-linear-gradient(45deg, rgb(53, 24, 219) 0%, #8a23e7 24.7%, rgb(176, 49, 248) 40.3%, rgba(209,42,224,1) 57.5%, rgb(84, 42, 224) 75.3%, rgb(56, 70, 239) 100%) rgb(89, 49, 255);
 	background: -moz-linear-gradient(45deg, rgb(53, 24, 219) 0%, #8a23e7 24.7%, rgb(176, 49, 248) 40.3%, rgba(209,42,224,1) 57.5%, rgb(84, 42, 224) 75.3%, rgb(56, 70, 239) 100%) rgb(89, 49, 255);
 	background: linear-gradient(45deg, rgb(53, 24, 219) 0%, #8a23e7 24.7%, rgb(176, 49, 248) 40.3%, rgba(209,42,224,1) 57.5%, rgb(84, 42, 224) 75.3%, rgb(56, 70, 239) 100%) rgb(89, 49, 255);
@@ -12,7 +14,18 @@
 
 
 header{
-	height: 1000px;
+	width: 100vw;
+	background: rgb(255,50,54); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(255,50,54,1) 0%, rgba(249,49,119,1) 34%, rgba(209,42,224,1) 53%, rgba(209,42,224,1) 53%, rgba(57,115,239,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(255,50,54,1) 0%,rgba(249,49,119,1) 34%,rgba(209,42,224,1) 53%,rgba(209,42,224,1) 53%,rgba(57,115,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(255,50,54,1) 0%,rgba(249,49,119,1) 34%,rgba(209,42,224,1) 53%,rgba(209,42,224,1) 53%,rgba(57,115,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#3973ef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	
+}
+.header-1{
+	height: 100vh;
+	width: 100vw;
 	background: rgb(255,50,54); /* Old browsers */
 	background: -moz-linear-gradient(45deg, rgba(255,50,54,1) 0%, rgba(249,49,119,1) 34%, rgba(209,42,224,1) 53%, rgba(209,42,224,1) 53%, rgba(57,115,239,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(45deg, rgba(255,50,54,1) 0%,rgba(249,49,119,1) 34%,rgba(209,42,224,1) 53%,rgba(209,42,224,1) 53%,rgba(57,115,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -22,7 +35,7 @@ header{
 	
 }
 .header-ind{
-	height: 1000px;
+	height: 100vh;
 	background: rgb(255,50,54); /* Old browsers */
 	background: -moz-linear-gradient(45deg, rgba(255,50,54,1) 0%, rgba(249,49,119,1) 34%, rgba(209,42,224,1) 53%, rgba(209,42,224,1) 53%, rgba(57,115,239,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(45deg, rgba(255,50,54,1) 0%,rgba(249,49,119,1) 34%,rgba(209,42,224,1) 53%,rgba(209,42,224,1) 53%,rgba(57,115,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -265,6 +278,17 @@ a{
 	justify-content: center;
 	align-items: center;
 	margin-top: -5px;
+
+}
+.container-register-butt-1{
+	width: 80%;
+	height: 10%;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	align-items: center;
+	margin-top: -45px;
 }
 .register-button{
 	background-color: rgba(254, 254, 254, 0.2);
@@ -281,9 +305,8 @@ a{
 /* switch */
 
 #container-switch{
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
-	display: flex;
 
 }
 
@@ -291,6 +314,7 @@ a{
 .switch {
   width: 100%;
   height: 100%;
+
   
   }
 
@@ -301,29 +325,32 @@ a{
 .slider {
   display: block;
   cursor: pointer;
-	width: 550px;
-	height: 250px;
+	width: 350px;
+	height: 200px;
   background-color: rgba(255, 255, 255, 0.24);
   -webkit-transition: .4s;
   transition: .4s;
   position: relative;
   margin: 0 auto;
 	bottom: -27%;
-	 transform: rotate(270deg);
-	 tranform: translate(-50%);
+	transform: rotate(270deg);
+
 }
 
 
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 250px;
-  width: 250px;
-  bottom: px;
-  background-color: #ffffff;
-  -webkit-transition: .4s;
-  transition: .4s;
+position: absolute;
+content: "";
+height: 200px;
+width: 200px;
+bottom: px;
+background-color: none;
+background-image: url("../images/cruz.png");
+background-repeat: no-repeat;
+background-size: contain;
+-webkit-transition: .4s;
+transition: .4s;
 }
 
 input:checked + .slider {
@@ -336,9 +363,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(130%);
-  -ms-transform: translateX(120%);
-  transform: translateX(120%);
+  -webkit-transform: translateX(90%);
+  -ms-transform: translateX(90%);
+  transform: translateX(90%);
 }
 
 /* Rounded sliders */
@@ -352,8 +379,7 @@ input:checked + .slider:before {
 /* 2 */
 #container-switch-1{
 	width: 100%;
-	height: 100%;
-	display: flex;
+	height: 100vh;
 
 }
 
@@ -371,8 +397,8 @@ input:checked + .slider:before {
 .slider-1 {
   display: block;
   cursor: pointer;
-	width: 550px;
-	height: 250px;
+	width: 350px;
+	height: 200px;
   background-color: rgba(255, 255, 255, 0.24);
   -webkit-transition: .4s;
   transition: .4s;
@@ -387,10 +413,13 @@ input:checked + .slider:before {
 .slider-1:before {
   position: absolute;
   content: "";
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   bottom: px;
-  background-color: #ffffff;
+  background-color: none;
+  background-image: url("../images/cruz.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -405,9 +434,9 @@ input:focus + .slider-1 {
 }
 
 input:checked + .slider-1:before {
-  -webkit-transform: translateX(130%);
-  -ms-transform: translateX(120%);
-  transform: translateX(120%);
+  -webkit-transform: translateX(90%);
+  -ms-transform: translateX(90%);
+  transform: translateX(90%);
 }
 
 /* Rounded sliders */
